@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
-import { CalculatorIcon, Star, Image, BarChart3, Smartphone, Apple } from "lucide-react";
+import { CalculatorIcon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const GENRES = [
@@ -304,8 +304,20 @@ export default function AdRevenueCalculator() {
                   }`}
                   onClick={() => setPlatforms(prev => ({ ...prev, ios: !prev.ios }))}
                 >
-                  <div className="p-2 bg-blue-100 rounded-lg">
-                    <Apple className="w-5 h-5 text-blue-600" />
+                  <div className="rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 96 96" id="Apple-App-Store--Streamline-Svg-Logos" height="24" width="24">
+                  <desc>
+                     Apple App Store Streamline Icon: https://streamlinehq.com
+                  </desc>
+                  <path fill="url(#a)" d="M21.5859 1h52.8282C85.7834 1 95 10.2166 95 21.5859v52.8282C95 85.7834 85.7834 95 74.4141 95H21.5859C10.2166 95 1 85.7834 1 74.4141V21.5859C1 10.2166 10.2166 1 21.5859 1Z"></path>
+                  <path fill="#ffffff" d="m31.1245 69.2268.0088.0028-3.2139 5.5666c-1.1731 2.0319-3.7715 2.7281-5.8034 1.555-2.0318-1.173-2.7281-3.7714-1.555-5.8034l2.3676-4.1007.2272-.3935c.4058-.5834 1.4071-1.5898 3.4101-1.4006 0 0 4.7135.5115 5.0546 2.9614.0001 0 .0466.8061-.496 1.6124ZM76.7084 55.009H66.6863c-.6825-.0457-.9806-.2895-1.0976-.4311l-.0074-.013L54.8529 35.983l-.0138.0093-.6435-.9226c-1.0544-1.6124-2.7288 2.5118-2.7288 2.5118-1.9992 4.5955.2836 9.8205 1.0797 11.3997l14.901 25.8092c1.173 2.0319 3.7713 2.7282 5.8033 1.555 2.0318-1.173 2.728-3.7714 1.5549-5.8033l-3.7261-6.4538c-.0721-.1563-.1978-.581.5663-.5826h5.0625c2.3462 0 4.2483-1.9021 4.2483-4.2484 0-2.3463-1.9021-4.2483-4.2483-4.2483Zm-19.4661 5.7755s.5349 2.7211-1.535 2.7211h-2.0699l-34.9789.0001c-2.3463 0-4.2483-1.9021-4.2483-4.2484 0-2.3463 1.902-4.2483 4.2483-4.2483h9.5248c1.5378-.0892 1.9024-.9768 1.9024-.9768l.0084.0042 12.4331-21.5348-.0037-.0008c.2267-.416.0379-.809.0051-.8713l-4.106-7.1117c-1.1732-2.032-.477-4.6303 1.5549-5.8034 2.032-1.1732 4.6302-.4769 5.8034 1.555l1.9043 3.2984 1.9009-3.2925c1.1731-2.032 3.7714-2.7282 5.8033-1.555 2.032 1.1732 2.7282 3.7715 1.555 5.8033l-17.301 29.9662c-.0757.1824-.0988.4687.464.5192h10.3415l.0023.1007s5.9771.093 6.7911 5.6748Z"></path>
+                  <defs>
+                    <linearGradient id="a" x1="4701" x2="4701" y1="1" y2="9401" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#17c9fb"></stop>
+                      <stop offset="1" stop-color="#1a74e8"></stop>
+                    </linearGradient>
+                  </defs>
+                </svg>
                   </div>
                   <div className="flex-1">
                     <div className="text-sm font-medium text-gray-900">App Store</div>
@@ -319,8 +331,16 @@ export default function AdRevenueCalculator() {
                   }`}
                   onClick={() => setPlatforms(prev => ({ ...prev, android: !prev.android }))}
                 >
-                  <div className="p-2 bg-green-100 rounded-lg">
-                    <Smartphone className="w-5 h-5 text-green-600" />
+                  <div className="rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="Google-Play-Icon--Streamline-Svg-Logos" height="24" width="24">
+                    <desc>
+                      Google Play Icon Streamline Icon: https://streamlinehq.com
+                    </desc>
+                    <path fill="#ea4335" d="M11.297225 11.4742 1.43933 21.802225c0.224315 0.79505 0.8035175 1.44175 1.56912 1.752025 0.7656 0.31025 1.631625 0.249225 2.346125 -0.16535l11.091975 -6.3173 -5.149325 -5.5974Z" stroke-width="0.25"></path>
+                    <path fill="#fbbc04" d="M21.265375 9.7186 16.46865 6.9713 11.069575 11.709275l5.421125 5.34765 4.76 -2.7179c0.8595 -0.450025 1.398125 -1.340025 1.398125 -2.310225s-0.538625 -1.860175 -1.398125 -2.3102h0.014675Z" stroke-width="0.25"></path>
+                    <path fill="#4285f4" d="M1.4394 2.2039575c-0.0595875 0.2202875 -0.0892375 0.4475925 -0.088175 0.6757925v18.246675c0.000625 0.2281 0.030245 0.455175 0.088175 0.6758l10.1958 -10.063575L1.4394 2.2039575Z" stroke-width="0.25"></path>
+                    <path fill="#34a853" d="m11.3707 12.0031 5.0979 -5.0318L5.3913 0.62464c-0.416725 -0.2440675 -0.8907 -0.3733325 -1.373625 -0.374635C2.81905 0.24763525 1.7653225 1.0431925 1.43933 2.196615L11.3707 12.0031Z" stroke-width="0.25"></path>
+                  </svg>
                   </div>
                   <div className="flex-1">
                     <div className="text-sm font-medium text-gray-900">Google Play</div>
@@ -341,7 +361,12 @@ export default function AdRevenueCalculator() {
                   }`}
                   onClick={() => setAdFormats(prev => ({ ...prev, rewarded_video: !prev.rewarded_video }))}
                 >
-                  <Star className="w-5 h-5 text-yellow-500" />
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="Grade--Streamline-Rounded-Material" height="24" width="24" className="text-yellow-400">
+                    <desc>
+                      Grade Streamline Icon: https://streamlinehq.com
+                    </desc>
+                    <path fill="currentColor" d="m8.075 17.87505 3.925 -2.35 3.925 2.375 -1.05 -4.45 3.45 -3 -4.55 -0.4 -1.775 -4.2 -1.775 4.175 -4.55 0.4 3.45 3 -1.05 4.45Zm3.925 -0.6 -4.65 2.8c-0.13335 0.08335 -0.275 0.12085 -0.425 0.1125 -0.15 -0.00835 -0.28335 -0.05415 -0.4 -0.1375 -0.11665 -0.08335 -0.20415 -0.19165 -0.2625 -0.325 -0.05835 -0.13335 -0.07085 -0.28335 -0.0375 -0.45l1.225 -5.3 -4.099995 -3.575c-0.13333 -0.11665 -0.2125 -0.24585 -0.2375 -0.3875 -0.025 -0.14165 -0.02083 -0.27915 0.0125 -0.4125 0.033335 -0.13335 0.108335 -0.24585 0.225 -0.3375 0.11667 -0.09165 0.258335 -0.14585 0.425 -0.1625l5.424995 -0.475 2.1 -5c0.06665 -0.15 0.16665 -0.2625 0.3 -0.3375 0.13335 -0.075 0.26665 -0.1125 0.4 -0.1125 0.13335 0 0.26665 0.0375 0.4 0.1125 0.13335 0.075 0.23335 0.1875 0.3 0.3375l2.1 5 5.425 0.475c0.16665 0.01665 0.30835 0.07085 0.425 0.1625 0.11665 0.09165 0.19165 0.20415 0.225 0.3375 0.03335 0.13335 0.0375 0.27085 0.0125 0.4125 -0.025 0.14165 -0.10415 0.27085 -0.2375 0.3875l-4.1 3.575 1.225 5.3c0.03335 0.16665 0.02085 0.31665 -0.0375 0.45 -0.05835 0.13335 -0.14585 0.24165 -0.2625 0.325 -0.11665 0.08335 -0.25 0.12915 -0.4 0.1375 -0.15 0.00835 -0.29165 -0.02915 -0.425 -0.1125l-4.65 -2.8Z" stroke-width="0.5"></path>
+                  </svg>
                   <div className="flex-1">
                     <div className="text-sm font-medium text-gray-900">Rewarded video</div>
                   </div>
@@ -354,7 +379,12 @@ export default function AdRevenueCalculator() {
                   }`}
                   onClick={() => setAdFormats(prev => ({ ...prev, interstitial: !prev.interstitial }))}
                 >
-                  <BarChart3 className="w-5 h-5 text-purple-500" />
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="Pause--Streamline-Rounded-Material" height="24" width="24" className="text-purple-500">
+                    <desc>
+                      Pause Streamline Icon: https://streamlinehq.com
+                    </desc>
+                    <path fill="currentColor" d="M14.625 19c-0.4125 0 -0.7656 -0.1469 -1.05925 -0.44075 -0.29385 -0.29365 -0.44075 -0.64675 -0.44075 -1.05925V6.5c0 -0.4125 0.1469 -0.76565 0.44075 -1.0595 0.29365 -0.29365 0.64675 -0.4405 1.05925 -0.4405H17.5c0.4125 0 0.76565 0.14685 1.0595 0.4405 0.29365 0.29385 0.4405 0.647 0.4405 1.0595v11c0 0.4125 -0.14685 0.7656 -0.4405 1.05925C18.26565 18.8531 17.9125 19 17.5 19h-2.875ZM6.5 19c-0.4125 0 -0.7656 -0.1469 -1.05925 -0.44075C5.1469 18.2656 5 17.9125 5 17.5V6.5c0 -0.4125 0.1469 -0.76565 0.44075 -1.0595C5.7344 5.14685 6.0875 5 6.5 5h2.875c0.4125 0 0.76565 0.14685 1.0595 0.4405 0.29365 0.29385 0.4405 0.647 0.4405 1.0595v11c0 0.4125 -0.14685 0.7656 -0.4405 1.05925 -0.29385 0.29385 -0.647 0.44075 -1.0595 0.44075H6.5Zm8.125 -1.5H17.5V6.5h-2.875v11ZM6.5 17.5h2.875V6.5H6.5v11Z" stroke-width="0.5"></path>
+                  </svg>
                   <div className="flex-1">
                     <div className="text-sm font-medium text-gray-900">Interstitial ads</div>
                   </div>
@@ -367,7 +397,12 @@ export default function AdRevenueCalculator() {
                   }`}
                   onClick={() => setAdFormats(prev => ({ ...prev, banner: !prev.banner }))}
                 >
-                  <Image className="w-5 h-5 text-blue-500" />
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="Planner-Banner-Ad-Pt--Streamline-Rounded-Material" height="24" width="24" className="text-blue-500">
+                    <desc>
+                      Planner Banner Ad Pt Streamline Icon: https://streamlinehq.com
+                    </desc>
+                    <path fill="currentColor" d="M5.5 22c-0.4 0 -0.75 -0.15 -1.05 -0.45 -0.3 -0.3 -0.45 -0.65 -0.45 -1.05V3.5c0 -0.4 0.15 -0.75 0.45 -1.05 0.3 -0.3 0.65 -0.45 1.05 -0.45h13c0.4 0 0.75 0.15 1.05 0.45 0.3 0.3 0.45 0.65 0.45 1.05v17c0 0.4 -0.15 0.75 -0.45 1.05 -0.3 0.3 -0.65 0.45 -1.05 0.45H5.5Zm0 -1.5h13V3.5H5.5v17Zm5.7 -3.3 -1.45 -1.825c-0.08335 -0.1 -0.18335 -0.15 -0.3 -0.15 -0.11665 0 -0.21665 0.05 -0.3 0.15l-1.6 2.1c-0.1 0.13335 -0.1125 0.26665 -0.0375 0.4 0.075 0.13335 0.1875 0.2 0.3375 0.2h8.425c0.1535 0 0.26265 -0.06665 0.3275 -0.2 0.065 -0.13335 0.05585 -0.26665 -0.0275 -0.4l-2.45 -3.275c-0.08335 -0.1 -0.18335 -0.15 -0.3 -0.15 -0.11665 0 -0.21665 0.05 -0.3 0.15l-2.325 3Z" stroke-width="0.5"></path>
+                  </svg>
                   <div className="flex-1">
                     <div className="text-sm font-medium text-gray-900">Banner ads</div>
                   </div>
