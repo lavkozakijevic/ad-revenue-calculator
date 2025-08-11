@@ -4,6 +4,7 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/ad-revenue-calculator/',
   plugins: [react()],
   server: {
     allowedHosts: true
