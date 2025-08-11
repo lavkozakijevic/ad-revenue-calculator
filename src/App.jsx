@@ -3,7 +3,7 @@ import './App.css'
 import Pages from '@/pages/index.jsx'
 import { Toaster } from '@/components/ui/toaster'
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter basename="/ad-revenue-calculator">
       <Pages />
@@ -11,5 +11,3 @@ function App() {
     </BrowserRouter>
   )
 }
-
-export default App
