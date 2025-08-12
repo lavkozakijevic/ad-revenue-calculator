@@ -18,6 +18,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html, body {
+  background-color: #ffffff !important;
+}
+
 a {
   font-weight: 500;
   color: #646cff;

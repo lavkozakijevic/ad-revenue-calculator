@@ -238,7 +238,7 @@ export default function AdRevenueCalculator() {
         window.parent.postMessage(
           {
             type: "resize-iframe",
-            height: document.body.scrollHeight
+            height: document.documentElement.scrollHeight
           },
           "*"
         );
