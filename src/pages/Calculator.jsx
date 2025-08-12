@@ -295,15 +295,7 @@ export default function AdRevenueCalculator() {
   return (
     <div className="min-h-screen bg-gray-50 py-8 px-4">
       <div className="max-w-2xl mx-auto">
-        <div className="text-center mb-8">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="p-2 bg-white rounded-xl shadow-sm">
-              <CalculatorIcon className="w-6 h-6 text-gray-700" />
-            </div>
-            <h1 className="text-3xl font-bold text-gray-900">Ad Revenue Calculator</h1>
-          </div>
-          <p className="text-gray-600 text-lg">Calculate your estimated monthly revenue based off real market data</p>
-        </div>
+        
 
         <Card className="mb-8 shadow-sm border-0">
           <CardContent className="p-8 space-y-8">
