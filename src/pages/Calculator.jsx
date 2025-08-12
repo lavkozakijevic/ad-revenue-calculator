@@ -6,7 +6,8 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
-import { CalculatorIcon, Star, Image, BarChart3, Smartphone, Apple } from "lucide-react";
+import { StarIcon, ImageIcon, BarChartIcon, SmartphoneIcon, AppleIcon } from "@/icons/CustomIcons";
+import { CalculatorIcon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const GENRES = [
@@ -236,15 +237,15 @@ export default function AdRevenueCalculator() {
 
   const getFormatIcon = (format) => {
     switch(format) {
-      case 'rewarded_video': return Star;
-      case 'interstitial': return BarChart3;
-      case 'banner': return Image;
-      default: return BarChart3;
+      case 'rewarded_video': return StarIcon;
+      case 'interstitial': return BarChartIcon;
+      case 'banner': return ImageIcon;
+      default: return BarChartIcon;
     }
   };
 
   const getPlatformIcon = (platform) => {
-    return platform === 'ios' ? Apple : Smartphone;
+    return platform === 'ios' ? AppleIcon : SmartphoneIcon;
   };
 
   const getRegionDisplayName = (region) => {
@@ -522,7 +523,7 @@ export default function AdRevenueCalculator() {
                   <Card key={index} className="shadow-sm border border-gray-200 overflow-hidden">
                     <CardHeader className="bg-gray-50 border-b py-3 px-4">
                       <CardTitle className="flex items-center gap-3 text-base">
-                        <div className="flex items-center gap-2 text-blue-600">
+                        <div className="flex items-center gap-2 text-black">
                           <FormatIcon className="w-4 h-4" />
                           <span>{getFormatDisplayName(formatData.format)}</span>
                         </div>
