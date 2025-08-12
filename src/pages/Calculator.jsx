@@ -154,10 +154,30 @@ export default function AdRevenueCalculator() {
     return hasGenre && hasPlatform && hasAdFormat && hasDau && hasValidEmail;
   };
 
-  const calculateRevenue = () => {
-    if (!canCalculate()) return;
+    const calculateRevenue = async () => {
+      // Send email to Google Sheets
+      try {
+        if (email && email.trim()) {
+          await fetch(
+            "https://script.google.com/macros/s/AKfycbxJWI_XDWd4NLR_PbeKPT7W-wukcGZE6qWknwCKPAzWZ6r-lgYv5ATgrqT5qJDG_sSN/exec",
+            {
+              method: "POST",
+              mode: "no-cors",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                email: email.trim(),
+                ts: Date.now(),
+              }),
+            }
+          );
+        }
+      } catch (err) {
+        console.warn("Email capture failed:", err);
+      }
     
-    setIsCalculating(true);
+      if (!canCalculate()) return;
+    
+      setIsCalculating(true);
     
     setTimeout(() => {
       const calculationResults = [];
