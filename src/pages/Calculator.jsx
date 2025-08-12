@@ -234,6 +234,15 @@ export default function AdRevenueCalculator() {
       
       setResults(calculationResults);
       setIsCalculating(false);
+      if (window.parent) {
+        window.parent.postMessage(
+          {
+            type: "resize-iframe",
+            height: document.body.scrollHeight
+          },
+          "*"
+        );
+      }
     }, 1000);
   };
 
