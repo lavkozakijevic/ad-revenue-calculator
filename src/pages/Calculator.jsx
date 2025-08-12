@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
-import { CalculatorIcon } from "lucide-react";
+import { CalculatorIcon, Star, Image, BarChart3, Smartphone, Apple } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const GENRES = [
