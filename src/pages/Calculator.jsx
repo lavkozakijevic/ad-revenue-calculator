@@ -587,7 +587,7 @@ useEffect(() => {
                         
                         return (
                           <div key={platformIndex} className="border-b last:border-b-0">
-                            <div className="px-4 py-3 bg-gray-50 flex items-center gap-2">
+                            <div className="px-4 py-3 bg-white flex items-center gap-2">
                               <PlatformIcon className="w-4 h-4 text-gray-600" />
                               <span className="text-sm font-medium text-gray-900">
                                 {platformData.platform === 'ios' ? 'App Store' : 'Google Play'}
