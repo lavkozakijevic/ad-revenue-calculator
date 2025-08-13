@@ -315,7 +315,7 @@ useEffect(() => {
   };
 
   return (
-    <div className="min-h-screen py-4 px-4 rounded-lg">
+    <div className="min-h-screen py-0 px-0 rounded-lg">
       <div className="max-w-2xl mx-auto">
         
 
