@@ -140,6 +140,28 @@ export default function AdRevenueCalculator() {
   const [results, setResults] = useState(null);
   const [isCalculating, setIsCalculating] = useState(false);
 
+// Tell the parent page (Webflow) how tall the app is
+const postHeight = () => {
+  if (window?.parent) {
+    const h = Math.max(
+      document.documentElement.scrollHeight,
+      document.body.scrollHeight
+    );
+    window.parent.postMessage({ type: 'resize-iframe', height: h }, '*');
+  }
+};
+
+// Resize once on first render (initial load)
+useEffect(() => {
+  postHeight();
+}, []);
+
+// Resize when results or main inputs change (lets height grow without waiting for click)
+useEffect(() => {
+  const t = setTimeout(postHeight, 0);
+  return () => clearTimeout(t);
+}, [results, genre, platforms, adFormats, dau, isCalculating]);
+
   const isValidEmail = (email) => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   };
