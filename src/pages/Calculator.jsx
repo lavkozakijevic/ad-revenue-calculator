@@ -512,7 +512,7 @@ useEffect(() => {
                 className="h-12 border-gray-200"
               />
               <p className="text-xs text-gray-500 leading-relaxed">
-                By submitting you agree we may store your email and contact you about Game Scout. We <strong>do not</strong> share data with third parties.
+                By submitting you agree we may store your email and contact you about ad monetization services. We <strong>do not</strong> share data with third parties.
               </p>
             </div>
 
