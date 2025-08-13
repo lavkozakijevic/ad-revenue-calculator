@@ -564,7 +564,7 @@ useEffect(() => {
                 
                 return (
                   <Card key={index} className="shadow-sm border border-gray-200 overflow-hidden">
-                    <CardHeader className="bg-gray-50 border-b py-3 px-4">
+                    <CardHeader className="border-b py-3 px-4">
                       <CardTitle className="flex items-center gap-3 text-base">
                         <div className="flex items-center gap-2 text-black">
                           <FormatIcon className="w-4 h-4" />
