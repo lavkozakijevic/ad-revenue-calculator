@@ -293,7 +293,7 @@ export default function AdRevenueCalculator() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8 px-4">
+    <div className="min-h-screen py-4 px-4 rounded-lg">
       <div className="max-w-2xl mx-auto">
         
 
